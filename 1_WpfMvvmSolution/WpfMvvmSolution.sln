@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_Mvvm", "Wpf_Mvvm\Wpf_Mv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMExample", "MVVMExample\MVVMExample.csproj", "{45A2D3A9-C404-41A4-970F-FC0BC58B8FCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedMVVMExample", "AdvancedMVVMExample\AdvancedMVVMExample.csproj", "{06AF1A7D-49E4-4920-84D1-60FF3D36D3A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{45A2D3A9-C404-41A4-970F-FC0BC58B8FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45A2D3A9-C404-41A4-970F-FC0BC58B8FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45A2D3A9-C404-41A4-970F-FC0BC58B8FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06AF1A7D-49E4-4920-84D1-60FF3D36D3A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06AF1A7D-49E4-4920-84D1-60FF3D36D3A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06AF1A7D-49E4-4920-84D1-60FF3D36D3A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06AF1A7D-49E4-4920-84D1-60FF3D36D3A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
