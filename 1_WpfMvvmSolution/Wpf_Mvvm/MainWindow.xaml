@@ -3,10 +3,39 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Wpf_Mvvm"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        xmlns:viewModel="clr-namespace:Wpf_Mvvm.ViewModel"
+        Title="ContatoMVVM" Height="300" Width="300">
+
+    <Window.Resources>
+        <viewModel:ContatoViewModel x:Key="contatoViewModel" />
+    </Window.Resources>
+    
+    <Grid DataContext="{StaticResource ResourceKey=contatoViewModel}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="93*" />
+            <RowDefinition Height="29*" />
+            <RowDefinition Height="27*" />
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="81*" />
+        </Grid.RowDefinitions>
+        <ListView Grid.ColumnSpan="2" BorderThickness="2" x:Name="lstContatos" 
+                  IsSynchronizedWithCurrentItem="True" 
+                  ItemsSource="{StaticResource ResourceKey=contatoViewModel}" 
+                  DisplayMemberPath="Nome" 
+                  Margin="0,0,0,28" 
+        Grid.RowSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Nome" />
+        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Path=Nome}" />
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Sobrenome" />
+        <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Path=Sobrenome}" />
+        <TextBlock Grid.Column="0" Grid.Row="3" Text="Email" />
+        <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding Path=Email}" />
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="Telefone" />
+        <TextBox Grid.Column="1" Grid.Row="4" Text="{Binding Path=Telefone}" />
     </Grid>
 </Window>
