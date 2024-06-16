@@ -1,0 +1,27 @@
+﻿<!-- MainWindow.xaml -->
+<Window x:Class="WpfConcatenateAppWithMvvm.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:WpfConcatenateAppWithMvvm.ViewModel"
+        mc:Ignorable="d"
+        Title="Calculation Example" Height="200" Width="300">
+    <Window.DataContext>
+        <vm:GreatMessageViewModel />
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Margin="5">Input 1:</Label>
+            <TextBox Text="{Binding Input1, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
+            <Label Margin="5">Input 2:</Label>
+            <TextBox Text="{Binding Input2, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
+            <Button Content="Generate Great Message" Command="{Binding GenerateMessageCommand}" IsEnabled="{Binding CanGenerateMessage}" Margin="10" HorizontalAlignment="Center" />
+            <Label Content="{Binding ConcatenatedMessage}" FontSize="20" />
+        </StackPanel>
+    </Grid>
+</Window>
