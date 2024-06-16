@@ -1,3 +1,5 @@
+# wpf_mvvm_projects
+
 WPF MVVM Projects
 Welcome to the WPF MVVM Projects repository! This collection contains various projects demonstrating the use of the Model-View-ViewModel (MVVM) design pattern in Windows Presentation Foundation (WPF) applications.
 
