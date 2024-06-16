@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_Mvvm", "Wpf_Mvvm\Wpf_Mvvm.csproj", "{C85D4121-F9A9-4804-A130-25D9FF9DA497}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMExample", "MVVMExample\MVVMExample.csproj", "{45A2D3A9-C404-41A4-970F-FC0BC58B8FCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C85D4121-F9A9-4804-A130-25D9FF9DA497}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C85D4121-F9A9-4804-A130-25D9FF9DA497}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C85D4121-F9A9-4804-A130-25D9FF9DA497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A2D3A9-C404-41A4-970F-FC0BC58B8FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A2D3A9-C404-41A4-970F-FC0BC58B8FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A2D3A9-C404-41A4-970F-FC0BC58B8FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A2D3A9-C404-41A4-970F-FC0BC58B8FCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
